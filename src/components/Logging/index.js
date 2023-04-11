@@ -33,7 +33,7 @@ export default function Logging({ form }) {
         const db = results.data.data.rows.map((value) => {
           return {
             ...value,
-            createdAt: moment(value.createdAt).format("DD MMM YYYY, HH:ss"),
+            createdAt: moment(value.createdAt).format("DD MMM YYYY, HH:mm"),
           };
         });
         setData(db);
